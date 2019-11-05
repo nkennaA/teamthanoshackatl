@@ -1,7 +1,8 @@
+  
 <!DOCTYPE html>
 <html>
     <!--Link to Admin Page can also go here as well as the CSS Page-->
-<link rel="stylesheet" type="text/css" href="Day2button.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="Admin" href=" ">
 <link rel="stylesheet" type="javascript" href="Lonnie javascript webpage link goes here.js">
   <!-- 
@@ -12,13 +13,17 @@
 
     <body>
     <!-- In case you want to add a webpage -->
+    
     <ul>
-    <li><a href="#Admin">Admin</a></li>
+    <li><a href="#Admin">ADMIN</a></li>
     </ul>
-        <form action="fullname">
-            <b>Full Name(First,Last):</b>
+    <h1></h1>
+    <div class="container">
+        <form action="fullname" >
+            <b>FULL NAME:</b>
             <input id="fullname" type="text" placeholder="(First, Last)" name="firstname"pattern="[a-z,A-Z]"{1,100}><br>
         </form>
+    
             <!--<b>Phone#:</b>
             (<input id="phone#1" type="tel" placeholder="Areacode Here" name="areacode" size=1 onKeyup="autotab(this, document.telephone.phone1)" maxlength="3" pattern="[0-9]{3}">)-
             <input id="phone#2" type="tel" name="mid" size=1 onKeyup="autotab(this, document.telephone.phone2)" maxlength="3" oninput="autotab(this, document.formName.inputName)" pattern="[0-9]{3}">-
@@ -28,12 +33,12 @@
         
         
         <form name="email">
-            <b>Email</b>
-            <input type="text" placeholder="JohnDoe@gmail.com" maxlength="30" pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?"><br>
+            <b>EMAIL:</b>
+            <input type="text" placeholder="JohnDoe@gmail.com" maxlength="50" pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?"><br>
             </form>
             
             <form action="event">
-                    <b>Event Name:</b>
+                    <b>EVENT:</b>
                     <!--<input id="eventname" type="text" placeholder="Event Name Here" name="eventname"pattern="[a-z,A-Z]"{1,100}><br>
                     --><select>
                             <option value="event1">Beer & Bytes</option>
@@ -41,9 +46,14 @@
                             <option value="event3">One Million Cups</option>
                             </select>
                             <br>
-                    <input type="submit" value="Submit">
-                </form>
+                            <input id="button" type="submit" value="Submit">
+                        </div>
+                        </form>
+            
 
+            <div class="polaroid">
+                <img src="logo.jpg" alt="5 Terre" style="width:100%">
+                <div class="container">
     <!--Extra Bonus if you wanted to add a bussiness phone#
     <b>Enter your bussiness phone number ex (1-888-555-1234):</b>
     <form name="telephone1">
