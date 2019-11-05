@@ -1,0 +1,111 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #26aae1;
+}
+li {
+  border-left: 2px solid rgb(253, 249, 249);
+}
+
+.container {
+  float: left;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 2px;
+  font-size: 30px;
+}
+form {
+  font-size: 20px;
+}
+label {
+  grid-column: 1 / 2;
+  font-family: 'Bebas Neue', sans-serif;
+  
+  
+}
+
+input,
+button {
+  grid-column: 2 / 3;
+  width: relative;
+  height: 20px;
+  font-size: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 10px;
+  padding: 10px; 
+  background-color: #26aae1;
+  background-origin: border-box 1px black;
+  
+}
+
+.polaroid {
+  padding: px;
+  display: grid;
+  float: right;
+  margin-right: auto;
+  width: 30%;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.container {width: 50%;}
+.polaroid {width: 40%;}
+.fullname {width: 20%;}
+input[type=submit]  {width: 10%;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For Tablet: */
+.container {width: 50%;}
+.polaroid {width: 40%;}
+input[type=submit] {width: 100%;}
+.fullname {width: 20%;}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {width: 90%;}
+  .polaroid {width: 100%;}
+  input[type=submit] {width: 60%;}
+  
+}
+
+@media screen and (max-width: 600px) {
+  .container, .polaroid, input[type=submit], .fullname {
+    width: 100%;
+    margin-top: 0;
+    
+  }
+}
