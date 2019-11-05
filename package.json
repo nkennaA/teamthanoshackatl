@@ -1,0 +1,22 @@
+{
+  "name": "teamthanoshackatl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkennaA/teamthanoshackatl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkennaA/teamthanoshackatl/issues"
+  },
+  "homepage": "https://github.com/nkennaA/teamthanoshackatl#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}
