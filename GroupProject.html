@@ -15,10 +15,10 @@
     <ul>
     <li><a href="#Admin">Admin</a></li>
     </ul>
-        <form action="fullname">
+        <form action="myForm">
             <b>Full Name(First,Last):</b>
-            <input id="fullname" type="text" placeholder="(First, Last)" name="firstname"pattern="[a-z,A-Z]"{1,100}><br>
-        </form>
+            <input id="fname" type="text" placeholder="(First, Last)" name="firstname"pattern="[a-z,A-Z]"{1,100}><br>
+        
             <!--<b>Phone#:</b>
             (<input id="phone#1" type="tel" placeholder="Areacode Here" name="areacode" size=1 onKeyup="autotab(this, document.telephone.phone1)" maxlength="3" pattern="[0-9]{3}">)-
             <input id="phone#2" type="tel" name="mid" size=1 onKeyup="autotab(this, document.telephone.phone2)" maxlength="3" oninput="autotab(this, document.formName.inputName)" pattern="[0-9]{3}">-
@@ -26,24 +26,20 @@
             <span>Format:123-456-7890</span>
             Why Does button work here but not at bottom of the page? How can I get to check everything on the final submit? -->
         
-        
-        <form name="email">
             <b>Email</b>
-            <input type="text" placeholder="JohnDoe@gmail.com" maxlength="30" pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?"><br>
-            </form>
+            <input id= "femail" type="text" placeholder="JohnDoe@gmail.com" maxlength="30" pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?"><br>
             
-            <form action="event">
-                    <b>Event Name:</b>
+            <b>Event Name:</b>
                     <!--<input id="eventname" type="text" placeholder="Event Name Here" name="eventname"pattern="[a-z,A-Z]"{1,100}><br>
                     --><select>
                             <option value="event1">Beer & Bytes</option>
                             <option value="event2">Augusta Dev</option>
                             <option value="event3">One Million Cups</option>
                             </select>
-                            <br>
-                    <input type="submit" value="Submit">
-                </form>
-
+                         
+                            <button id= "myBtn" onclick= "validateForm()" type= "button">Submit</button>   <br>
+                        </form>
+                        
     <!--Extra Bonus if you wanted to add a bussiness phone#
     <b>Enter your bussiness phone number ex (1-888-555-1234):</b>
     <form name="telephone1">
@@ -54,6 +50,7 @@
     </form>
     <input type="submit" value="Submit">-->
 
+    <script src="GroupProject.js"></script>
 
 </body>
 </html>
