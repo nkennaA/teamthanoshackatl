@@ -8,17 +8,19 @@
         </ul>
         <div class="container">
         <form name="myForm">
-            <b>Full Name(First,Last):</b>
-            <input id="fullname" type="text" placeholder="(First, Last)" name="fname" pattern="[a-z,A-Z]"{1,100}><br>
-            <b>Email</b>
-            <input type="text" placeholder="JohnDoe@gmail.com" maxlength="50" name="email">
-            <b>Event Name:</b>
-            <select>
+            First Name:<br>
+            <input id="fname" type="text" placeholder="First Name" name="fname"><br>
+            <br>Last Name: <br>
+            <input id="lname" type="text" placeholder="Last Name" name="lname"><br>
+            <br>Email</br>
+            <input type="text" placeholder="JohnDoe@gmail.com" maxlength="50" name="email"> <br>
+            <br>Event Name:</br>
+            <select class="select-css"> <br>
                 <option value="event1">Beer & Bytes</option>
                 <option value="event2">Augusta Dev</option>
                 <option value="event3">One Million Cups</option>
             </select><br>
-            <button type="submit" onclick="myFunction()" value="Submit">Submit</button>
+            <br><button type="submit" onclick="myFunction()" value="Submit">Submit</button>
         </form>
         </div>
         <img src="logo.jpg" alt="logo" class="polaroid">
