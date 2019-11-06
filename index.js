@@ -6,7 +6,7 @@ var path = require("path");
 var app = express();
     app.use(express.static(__dirname + '/public'));
 app.get('/', function(request, response){
-    response.render('pages/index');
+    response.render('public/index.html');
 });
 let port = process.env.PORT;
 if(port == null || port == ""){
