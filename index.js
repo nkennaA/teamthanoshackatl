@@ -2,8 +2,9 @@ var express = require("express");
 var app = express();
 var path = require("path");
 
+
 var app = express();
-    app.use(express.static('./public/index.html'));
+    app.use(express.static(__dirname + '/public'));
 
 let port = process.env.PORT;
 if(port == null || port == ""){
