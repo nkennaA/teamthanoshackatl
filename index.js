@@ -3,7 +3,7 @@ var app = express();
 var path = require("path");
 
 var app = express();
-    app.use(express.static('./public'));
+    app.use(express.static('./public/index.html'));
 
 let port = process.env.PORT;
 if(port == null || port == ""){
