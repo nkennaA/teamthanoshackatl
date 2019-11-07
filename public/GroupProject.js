@@ -1,21 +1,11 @@
 
-var mysql = require("mysql");
+import {pullEvents} from '../index.js';
+let events = pullEvents();
+events();
 
-var connection;
 
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-}
 
-connection.connect();
 
-connection.query('SELECT * FROM the_events', (err,rows) => {
-  if(err) {
-    console.log("Error fetching rows");
-  }
-  console.log("Data received from Db:\n");
-  console.log(rows);
-});
 //   function validateForm() {
 //   var name1 = document.forms["myForm"]["fname"].value;
 //   var email1 = document.forms["myForm"]["email"].value;
