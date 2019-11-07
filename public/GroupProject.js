@@ -19,9 +19,9 @@
   return false;
 }
 
-function ValidateEmail(mail){
+function myFunction(mail){
   var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (emailFormat.test(myForm.email.value)){
+  if (emailFormat.test(myForm.email.match(emailFormat))){
 
   }
   return true;
