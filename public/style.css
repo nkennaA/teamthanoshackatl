@@ -67,14 +67,20 @@ form {
   grid-gap: 10px;
   padding: 5px; 
   background-color: #26aae1;
-  background-origin: border-box 600px #26aae1;
+  background-origin: border-box 900px #26aae1;
   width: relative; 
-  background-size: 200%;
+  background-size: relative;
+  grid-column: 1 / 2 / 3 ;
+  float: left;
+  margin: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 120px;
 }
 
 input[type=submit] {
   width: 40%; 
-  height: 10em;
+  height: 20em;
 }
 
 
