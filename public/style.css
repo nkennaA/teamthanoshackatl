@@ -1,3 +1,7 @@
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -32,20 +36,22 @@ li {
 }
 
 .container {
+  width: relative;
+  height: relative;
+  background: #26aae1;
   grid-column: 1 / 2 / 3;
   float: left;
   margin: 0px;
   padding: 0px;
   border-radius: 20px;
   font-size: 30px;
-  margin-top: 170px;
-  
+  margin-top: 20px;
 }
 form {
-  font-size: 20px;
+  font-size: 30px;
 }
 label {
-  grid-column: 1 / 2;
+  grid-column: 1 / 2 /3 /4;
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -70,17 +76,38 @@ form {
   background-origin: border-box 900px #26aae1;
   width: relative; 
   background-size: relative;
-  grid-column: 1 / 2 / 3 ;
+  grid-column: 1 / 2 / 3 / 4;
   float: left;
   margin: 0px;
-  border-radius: 10px;
   font-size: 20px;
-  margin-top: 120px;
 }
 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+
 input[type=submit] {
-  width: 40%; 
-  height: 20em;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
 }
 
 
@@ -93,42 +120,5 @@ input[type=submit] {
 }
 
 
-body {
-  font-family: 'Bebas Neue', sans-serif;
-}
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-.container { width: 40%;}
-.polaroid {width: 40%;}
-.fullname {width: 20%;}
-}
 
-@media only screen and (min-width: 600px) {
-  /* For Tablet: */
-.container {width: 40%;}
-.polaroid {width: 40%;}
-.fullname {width: 20%;}
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .container {width: 100%;}
-  .polaroid {width: 100%;}
-  ul {width: 100%;}
-  
-}
-
-@media screen and (max-width: 600px) {
-  .container, .polaroid , .fullname {
-    width: 100%;
-    margin-top: 0;
-    
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .container {width: 100%;}
-  .polaroid {width: 100%;}
-  ul {width: 100%;}
-}
