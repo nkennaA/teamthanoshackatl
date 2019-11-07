@@ -1,6 +1,29 @@
+var express = require("express");
+var mysql = require("mysql");
 
+var app = express();
 
+var connection;
 
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+
+connection.connect((err) => {
+  if(err){
+    console.log("Error Connecting");
+    return;
+  }
+  console.log("Connection Established");
+});
+
+connection.query('SELECT * FROM the_events', (err,rows) => {
+  if(err) {
+    console.log("Error fetching rows");
+  }
+  console.log("Data received from Db:\n");
+  console.log(rows);
+});
 
   function validateForm() {
   var name1 = document.forms["myForm"]["fname"].value;
