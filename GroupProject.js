@@ -10,13 +10,13 @@ function myFunction() {
   
   if(x == "")
   {
-    document.myForm.email.focus();
+   
     alert ("message");
     return false;
   }
   if(z == "")
   {
-    document.myForm.email.focus();
+   
     alert('Message');
     return false;
   }
