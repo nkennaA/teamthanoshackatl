@@ -14,11 +14,11 @@
             <b>FULL NAME:</b>
             <input id="fullname" type="text" placeholder="(First, Last)" name="fname">
         <br><br>
-        
+            <div class= "mail"></div>
             <b>EMAIL:</b>
             <input id="fullemail" type="text" placeholder="JohnDoe@gmail.com" maxlength="50" name= "email">
             <br><br>
-            
+        </div>
             <b>EVENT:</b>
                         <select >
                             <option value="event1">Beer & Bytes</option>
@@ -26,7 +26,7 @@
                             <option value="event3">One Million Cups</option>
                             </select>
                             <br>
-                            <button type="submit" onclick="myFunction()" value="Submit">Submit</button>
+                            <button type="submit" onclick="myFunction(document.myForm.fname.email)" value="Submit">Submit</button>
                         
                         </form>
                     </div>
