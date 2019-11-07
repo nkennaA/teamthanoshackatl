@@ -1,7 +1,7 @@
 
-import {pullEvents} from '../index.js';
-let events = pullEvents();
-events();
+// import {pullEvents} from '../index.js';
+// let events = pullEvents();
+// events();
 
 
 
