@@ -1,0 +1,25 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <body>  
+        <ul>
+            <li><a href="#Admin">Admin</a></li>
+        </ul>
+        <div class="container">
+        <form name="myForm">
+            <b>Full Name(First,Last):</b>
+            <input id="fullname" type="text" placeholder="(First, Last)" name="fname" pattern="[a-z,A-Z]"{1,100}><br>
+            <b>Email</b>
+            <input type="text" placeholder="JohnDoe@gmail.com" maxlength="50" name="email">
+            <b>Event Name:</b>
+            <select>
+                <option value="event1">Beer && Bytes</option>
+                <option value="event2">Augusta Dev</option>
+                <option value="event3">One Million Cups</option>
+            </select><br>
+            <button type="submit" onclick="myFunction()" value="Submit">Submit</button>
+        </form>
+        </div>
+        <img src="logo.jpg" alt="logo" class="polaroid">
+        <script src="GroupProject.js"></script>
+    </body>
+</html>

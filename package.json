@@ -1,0 +1,29 @@
+{
+  "name": "teamthanoshackatl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkennaA/teamthanoshackatl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkennaA/teamthanoshackatl/issues"
+  },
+  "homepage": "https://github.com/nkennaA/teamthanoshackatl#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  },
+  "engines": {
+    "node": "10.16.3"
+  }
+}

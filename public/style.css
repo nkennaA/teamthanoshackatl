@@ -1,0 +1,128 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #26aae1;
+}
+li {
+  border-left: 2px solid rgb(253, 249, 249);
+}
+
+.container {
+  grid-column: 1 / 2 / 3;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 20px;
+  font-size: 30px;
+  margin-top: 170px;
+  
+}
+form {
+  font-size: 20px;
+}
+label {
+  grid-column: 1 / 2;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+input,
+button {
+  grid-column: 2 / 3;
+  width: relative;
+  height: 20px;
+  font-size: 20px;
+
+}
+
+form {
+  display: grid;
+  border-block-start: #26aae1;
+  border-block-start-style: dashed;
+  border-block-start-width: 15px;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 10px;
+  padding: 5px; 
+  background-color: #26aae1;
+  background-origin: border-box 600px #26aae1;
+  width: relative; 
+  background-size: 200%;
+}
+
+input[type=submit] {
+  width: 40%; 
+  height: 10em;
+}
+
+
+.polaroid {
+  padding: 10px;
+  display: grid;
+  float: right;
+  margin-right: auto;
+  size: 30%;
+}
+
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.container { width: 40%;}
+.polaroid {width: 40%;}
+.fullname {width: 20%;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For Tablet: */
+.container {width: 40%;}
+.polaroid {width: 40%;}
+.fullname {width: 20%;}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {width: 100%;}
+  .polaroid {width: 100%;}
+  ul {width: 100%;}
+  
+}
+
+@media screen and (max-width: 600px) {
+  .container, .polaroid , .fullname {
+    width: 100%;
+    margin-top: 0;
+    
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container {width: 100%;}
+  .polaroid {width: 100%;}
+  ul {width: 100%;}
+}
