@@ -27,5 +27,5 @@ app.use(express.static(__dirname + '/public'));
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
 app.listen(port, function () {
-    console.log(Example app listening on port, port);
+    console.log('Example app listening on port', port);
 });
