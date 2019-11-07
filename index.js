@@ -12,7 +12,7 @@ app.use(express.static('public'));
 // });
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve('index.html'));
+    res.sendFile(path.resolve('public', 'index.html'));
   });
 app.listen(port, function () {
     console.log(`Example app listening on port`, port);
