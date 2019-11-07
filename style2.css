@@ -30,6 +30,16 @@ ul {
   li {
     border-left: 2px solid rgb(253, 249, 249);
   }
+#eventone {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
 
- 
 
+
+table{
+  align: center;
+}
