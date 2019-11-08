@@ -1,15 +1,20 @@
+<!DOCTYPE html>
 <html>
+    <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+</head>
     <body>  
         <ul>
-            <li><a href="#Admin">Admin</a></li>
+            <li><a href="admin.html">Admin</a></li>
         </ul>
         <div class="container">
         <form name="myForm">
-            <b>Full Name(First,Last):</b>
-            <input id="fullname" type="text" placeholder="(First, Last)" name="fname" pattern="[a-z,A-Z]"{1,100}><br>
-            <b>Email</b>
-            <input type="text" placeholder="JohnDoe@gmail.com" maxlength="50" name="email">
+            <b>Fist Name:</b>
+            <input id="fname" type="text" placeholder="First Name" name="fname"><br>
+            <b>Last Name:</b>
+            <input id="lname" type="text" placeholder="Last Name" name="lname"><br>
+            <b>Email:</b>
+            <input type="email" placeholder="JohnDoe@gmail.com" maxlength="50" name="email">
             <b>Event Name:</b>
             <select>
                 <option value="event1">Beer && Bytes</option>
