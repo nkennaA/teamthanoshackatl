@@ -20,4 +20,8 @@ GCLS will automatically log all people who have submitted their information for 
 - Ashley Leonard @amleonerd
 
 ### Acknowledgments 
+<<<<<<< HEAD
 We would like to acknowledge theClubhou.se for allowing us to use their branding information to build this service. :smile:
+=======
+We would like to acknowledge theClubhou.se for allowing us to use their branding information to build this service. :smile:
+>>>>>>> cc9a6f5b203244b4f7201815b06cc303334b2fbf
