@@ -9,19 +9,19 @@
         </ul>
         <div class="container">
         <form name="myForm">
-            <b>Fist Name:</b>
-            <input id="fname" type="text" placeholder="First Name" name="fname"><br>
-            <b>Last Name:</b>
-            <input id="lname" type="text" placeholder="Last Name" name="lname"><br>
-            <b>Email:</b>
+            First Name:
+            <input id="fname" type="text" placeholder="First Name" name="fname">
+            Last Name:
+            <input id="lname" type="text" placeholder="Last Name" name="lname">
+            E-mail:
             <input type="email" placeholder="JohnDoe@gmail.com" maxlength="50" name="email">
-            <b>Event Name:</b>
+            Event Name:
             <select>
-                <option value="event1">Beer && Bytes</option>
+                <option value="event1">Beer & Bytes</option>
                 <option value="event2">Augusta Dev</option>
                 <option value="event3">One Million Cups</option>
             </select><br>
-            <button type="submit" onclick="myFunction()" value="Submit">Submit</button>
+            <b><button id="button" type="submit" onclick="validateForm()" value="Submit">Submit</button>
         </form>
         </div>
         <img src="logo.jpg" alt="logo" class="polaroid">
