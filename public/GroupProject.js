@@ -1,6 +1,6 @@
 
 
-function myFunction()
+function validateForm()
 {
   const 
     myEmail = document.getElementById("mail").value,
@@ -46,3 +46,4 @@ function myFunction()
   }
 }
    
+console.log("woo");
