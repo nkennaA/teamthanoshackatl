@@ -8,20 +8,20 @@
             <li><a href="admin.html">Admin</a></li>
         </ul>
         <div class="container">
-        <form name="myForm">
+    <form name="myForm">
             <b>Fist Name:</b>
-            <input id="fname" type="text" placeholder="First Name" name="fname"><br>
+        <input id="fname" type="text" placeholder="First Name" name="fname" required><br>
             <b>Last Name:</b>
-            <input id="lname" type="text" placeholder="Last Name" name="lname"><br>
+        <input id="lname" type="text" placeholder="Last Name" name="lname" required><br>
             <b>Email:</b>
-            <input type="email" placeholder="JohnDoe@gmail.com" maxlength="50" name="email">
+        <input type="email" placeholder="JohnDoe@gmail.com" maxlength="50" name="email" required id="mail">
             <b>Event Name:</b>
-            <select>
+              <select required>
                 <option value="event1">Beer && Bytes</option>
                 <option value="event2">Augusta Dev</option>
                 <option value="event3">One Million Cups</option>
             </select><br>
-            <button type="submit" onclick="myFunction()" value="Submit">Submit</button>
+            <button type="submit" id= "myBtn" onclick= "myFunction()" value="Submit">Submit</button>
         </form>
         </div>
         <img src="logo.jpg" alt="logo" class="polaroid">
