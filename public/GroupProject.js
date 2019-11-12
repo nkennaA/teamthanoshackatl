@@ -1,28 +1,49 @@
 
-//   function validateForm() {
-//   var name1 = document.forms["myForm"]["fname"].value;
-//   var email1 = document.forms["myForm"]["email"].value;
-  
-//   if (name1 == "") 
-//   {
-//     alert("Name must be filled out");
-//     return false;
-//   }
-//   if (email1 == "")
-//   {
-//     alert("Email must be filled out");
-//     return false;
-//   }
-//   return false;
-// }
 
-// function ValidateEmail(mail){
-//   var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//   if (emailFormat.test(myForm.email.value)){
+function validateForm()
+{
+  const 
+    myEmail = document.getElementById("mail").value,
+    fName = document.getElementById("fname").value,
+    lName = document.getElementById("lname").value,
+    nameReg = /^[a-zA-Z' `-]+$/ ,
+    emailReg = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,      
+    nameRes = nameReg.test(fName),
+    nameRes2 = nameReg.test(lName),
+    emailRes = emailReg.test(myEmail);
+    
+    
+    if(fName == "")
+  {
+    alert("Please Enter a First Name")
+    }
+  else if(nameRes === false)
+  {
+    alert("Please Enter a Valid First Name");
+     }
+  if(lName == "")
+  {
+    alert("Please Enter a Last Name");
+    }
+  else if(nameRes2 === false)
+  {
+    alert("Please Enter a Valid Last Name");
+    }
+  if(myEmail == "")
+  {
+    alert("Please Enter a Email Address");
+    return false;
+  }
+  else if(emailRes === false)
+  {
+    alert("Please Enter a Valid Email Address");
+    return false;
+    }
+  if(emailRes === true && nameRes2 === true && nameRes ===true){
+    
+    return confirm("Thank You for signing in @ The Clubhou.se!!!");
 
-//   }
-//   return true;
-// }
-// alert("You have entered an invalid email address!")
-// return false;
-// }
+  }
+}
+   
+console.log("woo");
