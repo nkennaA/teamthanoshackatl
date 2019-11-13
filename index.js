@@ -15,6 +15,8 @@ if(process.env.JAWS_DB_URL) {
       console.log("connected");
     }
   });
+} else {
+  console.log("NO JAWS URL");
 }
 global.connection = connection;
 
