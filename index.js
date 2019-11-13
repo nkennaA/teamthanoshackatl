@@ -5,8 +5,8 @@ const mysql = require('mysql');
 const path = require('path');
 const app = express();
 
-if(process.env.JAWS_DB_URL) {
-  var connection = mysql.createConnection(process.env.JAWS_DB_URL);
+if(process.env.JAWSDB_URL) {
+  var connection = mysql.createConnection(process.env.JAWSDB_URL);
   connection.connect(function(err){
     if(err) {
       console.log(err);
