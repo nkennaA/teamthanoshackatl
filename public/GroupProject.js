@@ -61,11 +61,10 @@ function validateForm() {
   if(myEmail == "") {
     alert("Please Enter Your Email Address!");
     }
+  
   else if(charEmail !== true) {
     alert("Please Don't Add Any Spaces In Your Email!");
-    return true;
     }
-  
   else if(emailRes === false) {
     alert("Please Enter a Valid Email Address!");
     return false;
