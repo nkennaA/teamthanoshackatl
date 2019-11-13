@@ -9,7 +9,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-
 }
 
 li {
@@ -36,31 +35,51 @@ li {
   border-left: 2px solid rgb(253, 249, 249);
 }
 
+
 .container {
   border: 5px solid #333;
-  width: 40%;
-  height: relative; 
+  width: 60%;
   float: left;
   background: #26aae1;
-  grid-column: 1 / 2 / 3;
-  margin: 20px;
+  /* margin: 20px; */
+  margin: 0;
   padding: 20px;
   font-size: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin-top: 60px;
 }
 
-label {
-  grid-column: 1 / 2 /3 /4;
-  font-family: 'Bebas Neue', sans-serif;
+@media only screen and (max-width: 1000px) {
+  .container {
+    margin-top: 20px !important;
+    width: 80% !important;
+  }
+  .polaroid {
+    margin-top: 20px !important;
+    width: 80% !important;
+    float: left !important;
+  }
 }
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100% !important;
+  }
+  .polaroid {
+    width: 100% !important;
+    float: left !important;
+  }
+}
+
 
 input,
 button {
-  grid-column: 2 / 3;
+  grid-column: 1/ 2 / 3;
   width: relative;
   height: 20px;
   font-size: 10px;
-
 }
 
 form {
@@ -71,13 +90,11 @@ form {
   border-block-start-width: 15px;
   grid-template-columns: 200px 1fr;
   grid-gap: 20px;
-  padding: 5px; 
-  width: relative; 
   background-size: relative;
   grid-column: 1 / 2 / 3 / 4;
   float: left;
-  margin: 0px;
-  width: 80%;
+  /* margin: 20px; */
+  width: 100%;
 }
 
 input[type=text] {
@@ -121,10 +138,11 @@ select{
 }
 
 .polaroid {
-  padding: 10px;
+  /* padding: 10px; */
   float: right;
-  margin-left: 10px;
-  width: 450px;
+  /* margin-left: 10px; */
+  margin: 0 auto;
+  width: 35%;
   position: relative;
   margin-top: 40px;
   object-fit: cover;
