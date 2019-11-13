@@ -6,6 +6,7 @@ const path = require('path');
 const app = express();
 
 const {getHomePage}=require('./routes/homePage.js');
+const {getAdmin}=require('./routes/admin.js');
 if(process.env.JAWSDB_URL) {
  var connection = mysql.createConnection(process.env.JAWSDB_URL);
  connection.connect(function(err){
