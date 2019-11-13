@@ -25,22 +25,17 @@ function validateForm() {
   
   else if(myChar1 == false){
     alert("Do Not Put Spaces In First Name!");
-    return false;
     }
   
   else if(fName[0] !== fName[0].toUpperCase()) {
       alert("Please Capitalize Your First Name!");
-      return false;
     }
   
   else if(char1 === true && char1 !== nameRes && nameRes !== spcChar) {
       alert("Do Not Add Special Characters In Your First Name!");
-      return true;
     }
-   
   else if(nameRes === false) {
     alert("Please Enter a Valid First Name!");
-    return false;
     }
   
   if(lName == "") {
@@ -49,32 +44,27 @@ function validateForm() {
     
   else if(myChar2 == false) {
       alert("Do Not Put Spaces in Last Name!");
-      return false;
     }
     
   else if(lName[0] !== lName[0].toUpperCase()) {
       alert("Please Capitalize Your Last Name!");
-      return false;
     }
     
   else if(char2 === true && char2 !== nameRes2 && nameRes2 !== spcChar) {
       alert("Do Not Add Special Characters In Your Last Name!");
-      return true;
     }
   
   else if(nameRes2 === false) {
     alert("Please Enter a Valid Last Name!");
-    return false;
     }
     
   if(myEmail == "") {
     alert("Please Enter Your Email Address!");
-    
     }
   else if(charEmail !== true) {
     alert("Please Don't Add Any Spaces In Your Email!");
     return true;
-  }
+    }
   
   else if(emailRes === false) {
     alert("Please Enter a Valid Email Address!");
