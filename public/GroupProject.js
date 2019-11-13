@@ -36,6 +36,7 @@ function validateForm() {
     }
   else if(nameRes === false) {
     alert("Please Enter a Valid First Name!");
+    return false;
     }
   
   if(lName == "") {
