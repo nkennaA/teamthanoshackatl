@@ -31,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views');
 
 app.get('/', getHomePage);
+app.get('/admin', getAdmin);
 
 app.listen(port, function () {
    console.log('Example app listening on port', port);
