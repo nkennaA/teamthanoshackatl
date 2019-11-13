@@ -46,4 +46,3 @@ function validateForm()
   }
 }
    
-console.log("woo");
