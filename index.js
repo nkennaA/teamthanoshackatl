@@ -19,14 +19,12 @@ if(process.env.JAWS_DB_URL) {
 global.connection = connection;
 
 var port = process.env.PORT || 3000;
-const path = require('path');
 app.set('port', process.env.port || port);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views');
-app.use(express.static(__dirname + '/public'));
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
