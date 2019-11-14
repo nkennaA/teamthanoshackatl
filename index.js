@@ -5,7 +5,8 @@ const mysql = require('mysql');
 const path = require('path');
 const app = express();
 
-const {getHomePage}=require('./routes/homePage.js');
+const {getHomePage, addUser}=require('./routes/homePage.js');
+const {getAdmin}=require('./routes/admin.js');
 if(process.env.JAWSDB_URL) {
  var connection = mysql.createConnection(process.env.JAWSDB_URL);
  connection.connect(function(err){
@@ -17,6 +18,14 @@ if(process.env.JAWSDB_URL) {
    }
  });
 } else {
+ var connection = mysql.createConnection('mysql://r73j0ltyjn09jiza:gyulu0ynbz3hy3sp@d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/h5rumeh3i389hfbj');
+ connection.connect(function(err){
+   if(err) {
+     console.log("this didnt work");
+   } else {
+     console.log("connected locally");
+   }
+ });
  console.log("NO JAWS URL");
 }
 global.connection = connection;
@@ -31,6 +40,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views');
 
 app.get('/', getHomePage);
+app.post('/', addUser);
+app.get('/admin', getAdmin);
 
 app.listen(port, function () {
    console.log('Example app listening on port', port);
