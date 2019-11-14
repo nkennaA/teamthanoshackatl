@@ -31,7 +31,7 @@ module.exports = {
                     if(err) {
                         return res.status(500).send(err);
                     }
-                    res.redirect('/');
+                    res.redirect('/success');
                 });
             }
         });
