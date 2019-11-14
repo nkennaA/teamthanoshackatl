@@ -152,7 +152,7 @@ module.exports = {
           console.log("True");
       }
         let name = req.body.fname +" "+ req.body.lname;
-        name = name.replace(/'/g, "&#x27");
+        name = name.replace(/'/g, "	&#39");
         let email = req.body.email;
         let eventID;
         let event = req.body.event;
