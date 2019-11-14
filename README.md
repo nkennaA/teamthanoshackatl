@@ -1,6 +1,6 @@
 # Gentle Cliffs Login Service
 
-The purpose of the Gentle Cliffs Login Service(GCLS) is to provide companies with an easy to use login service to track event attendance. This simple application acts as a database and sign in service all in one.
+The purpose of the Gentle Cliffs Login Service (GCLS) is to provide companies with an easy to use login service to track event attendance. This simple application acts as a database and sign in service all in one.
 
 ### Usage
 Setting up the GCLS is incredibly easy!
@@ -9,6 +9,8 @@ Have guests enter their name and email address in the provided slots.
 Have guests choose the event they are attending.
 Hit submit!
 GCLS will automatically log all people who have submitted their information for the event, which you can access from the admin page.
+
+GCLS uses JawsDB as an add-on for the MySQL Database for easy use with the Heroku application. EJS is used as an HTML engine and Express is used as the server.
 
 ### Contributors
 - Kaitlyn Alexander @jennkait
