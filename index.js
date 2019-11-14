@@ -7,6 +7,7 @@ const app = express();
 
 const {getHomePage, addUser}=require('./routes/homePage.js');
 const {getAdmin}=require('./routes/admin.js');
+const {success}=require('./routes/success.js');
 if(process.env.JAWSDB_URL) {
  var connection = mysql.createConnection(process.env.JAWSDB_URL);
  connection.connect(function(err){
@@ -41,6 +42,7 @@ app.set('views', __dirname + '/views');
 
 app.get('/', getHomePage);
 app.post('/', addUser);
+app.get('/success', success);
 app.get('/admin', getAdmin);
 
 app.listen(port, function () {

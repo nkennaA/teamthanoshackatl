@@ -1,7 +1,23 @@
 const fs = require('fs');
 module.exports = {
     getHomePage: (req, res) => {
-        res.render('index.ejs', {});
+        let eventsQuery = "SELECT event_name FROM the_events";
+        connection.query(eventsQuery, (err, result) => {
+            if(err) {
+                return res.status(500).send(err);
+            }
+            if(result.length != 3) {
+                return res.send("Too many events");
+            }
+            let first = result[0]["event_name"];
+            let second = result[1]["event_name"];
+            let third = result[2]["event_name"];
+            res.render('index.ejs', {
+                first,
+                second,
+                third
+            });
+        });
     },
     addUser: (req, res) => {
         if (!req.body) {
@@ -24,14 +40,14 @@ module.exports = {
                 return res.status(500).send(err);
             }
             if(result.length > 0) {
-                alert('This email already exists');
+                res.send('This email already exists');
             } else {
                 let insertQuery = "INSERT INTO `guests` (guest_name, email_address, event_id) VALUES ('"+name+"', '"+email+"', '"+eventID+"')";
                 connection.query(insertQuery, (err, result) => {
                     if(err) {
                         return res.status(500).send(err);
                     }
-                    res.redirect('/');
+                    res.redirect('/success');
                 });
             }
         });
