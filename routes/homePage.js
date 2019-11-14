@@ -32,7 +32,7 @@ module.exports = {
         emailReg = /^[a-zA-Z0-9][a-zA-Z0-9!@\$%\&-_.]+[\S+@\S]+@[a-zA-Z0-9!@\$%\&-_.]+$/i,   //*(yahoo|ymail|rocketmail|gmail|aol|hotmail|icloud|mailchimp|zoho|gmx|hushmail|mail|outlook|yandex|army|godaddy|aemail4u|boardermail|caramail|email|fastmail|swissmail|comcast|domain|namecheap|name|msn|theclubhou.se|simplicity|indeed|bluehost)\.(net|mil|com|in|org|co\.uk)*/ 
         spcChar= /^[0-9!@#\$%\^\&*\)\(+=._-]+$/, 
         errChar= /^\S+$/,
-        emailErr= /^\S+$/,
+        emailErr= /^\S+$/
         charEmail= emailErr.test(myEmail), 
         myChar1= errChar.test(fName),
         myChar2= errChar.test(lName),
@@ -46,55 +46,106 @@ module.exports = {
         console.log(emailRes);
        
       if(fName == "") {
-        res.send("Please Enter Your First Name!");
+          var message = "Please Enter Your First Name!";
+          res.render("error.ejs", {
+              message
+          });
+          return;
         }
       
       else if(myChar1 == false){
-        res.send("Do Not Put Spaces In First Name!");
+        var message= "Do Not Put Spaces In First Name!";
+        res.render("error.ejs", {
+            message
+        });
+        return;
         }
       
       else if(fName[0] !== fName[0].toUpperCase()) {
-          res.send("Please Capitalize Your First Name!");
+          var message= "Please Capitalize Your First Name!";
+          res.render("error.ejs", {
+            message
+        });
+        return;
         }
       
       else if(char1 === true && char1 !== nameRes && nameRes !== spcChar) {
-          res.send("Do Not Add Special Characters In Your First Name!");
+          var message= "Do Not Add Special Characters In Your First Name!"
+          res.render("error.ejs", {
+            message
+        });
+        return;
         }
       else if(nameRes === false) {
-        res.send("Please Enter a Valid First Name!");
-        return false;
+        var message= "Please Enter a Valid First Name!";
+        res.render("error.ejs", {
+            message
+        });
+        return;
         }
       
       if(lName == "") {
-        res.send("Please Enter Your Last Name!");
+        var message= "Please Enter Your Last Name!";
+        res.render("error.ejs", {
+            message
+        });
+        return;
         }
         
       else if(myChar2 == false) {
-          res.send("Do Not Put Spaces in Last Name!");
+          var message = "Do Not Put Spaces in Last Name!";
+          res.render("error.ejs", {
+            message
+        });
+        return;
         }
         
       else if(lName[0] !== lName[0].toUpperCase()) {
-          res.send("Please Capitalize Your Last Name!");
+          var message= "Please Capitalize Your Last Name!";
+          res.render("error.ejs", {
+            message
+        });
+        return;
         }
         
       else if(char2 === true && char2 !== nameRes2 && nameRes2 !== spcChar) {
-          res.send("Do Not Add Special Characters In Your Last Name!");
+          var message= "Do Not Add Special Characters In Your Last Name!";
+          res.render("error.ejs", {
+            message
+        });
+        return; 
         }
       
       else if(nameRes2 === false) {
-        res.send("Please Enter a Valid Last Name!");
+        var message= "Please Enter a Valid Last Name!";
+        res.render("error.ejs", {
+            message
+        });
+        return; 
         }
+    
         
       if(myEmail == "") {
-        res.send("Please Enter Your Email Address!");
+        var message= "Please Enter Your Email Address!";
+        res.render("error.ejs", {
+            message
+        });
+        return; 
         }
       
       else if(charEmail !== true) {
-        res.send("Please Don't Add Any Spaces In Your Email!");
+        var message= "Please Don't Add Any Spaces In Your Email!";
+        res.render("error.ejs", {
+            message
+        });
+        return; 
         }
       else if(emailRes === false) {
-        res.send("Please Enter a Valid Email Address!");
-        return false;
+        var message= "Please Enter a Valid Email Address!";
+        res.render("error.ejs", {
+            message
+        });
+        return; 
         }
       
       else if(emailRes === true && nameRes2 === true && nameRes ===true) {
