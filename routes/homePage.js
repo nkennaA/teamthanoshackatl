@@ -4,16 +4,16 @@ module.exports = {
         res.render('index.ejs', {});
     },
     addUser: (req, res) => {
-        if (!req.files) {
+        if (!req.body) {
             return res.status(400).send("No files were uploaded.");
         }
         let name = req.body.fname +" "+ req.body.lname;
         let email = req.body.email;
         let eventID;
         let event = req.body.event;
-        if(event === "Beer & Bytes"){
+        if(event === "event1"){
             eventID = 0;
-        } else if(event ==="Augusta Dev"){
+        } else if(event ==="event2"){
             eventID = 1;
         } else {
             eventID = 2;
