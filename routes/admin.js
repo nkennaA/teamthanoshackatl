@@ -31,7 +31,7 @@ module.exports = {
                     for(let packet in result) {
                         event3+= (result[packet]["guest_name"]) + ", ";
                     }
-                    event3 = event3.replace(/&#39/g, "\'");
+                    event3 = event3.replace(/&#39/g, "'");
                     console.log(event3);
                     res.render('admin.ejs', {
                         event1,
