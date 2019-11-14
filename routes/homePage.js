@@ -12,14 +12,14 @@ module.exports = {
         let eventID;
         let event = req.body.event;
         if(event === "event1"){
-            eventID = 0;
-        } else if(event ==="event2"){
             eventID = 1;
-        } else {
+        } else if(event ==="event2"){
             eventID = 2;
+        } else {
+            eventID = 3;
         }
         let emailQuery = "SELECT * FROM `guests` WHERE email_address = '"+email+"'";
-        connection.query(emailQuery, (req, res) => {
+        connection.query(emailQuery, (err, result) => {
             if (err) {
                 return res.status(500).send(err);
             }
@@ -27,11 +27,10 @@ module.exports = {
                 alert('This email already exists');
             } else {
                 let insertQuery = "INSERT INTO `guests` (guest_name, email_address, event_id) VALUES ('"+name+"', '"+email+"', '"+eventID+"')";
-                connection.query(insertQuery, (req, result) => {
+                connection.query(insertQuery, (err, result) => {
                     if(err) {
                         return res.status(500).send(err);
                     }
-                    alert("Successfully added user");
                     res.redirect('/');
                 });
             }

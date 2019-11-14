@@ -18,6 +18,14 @@ if(process.env.JAWSDB_URL) {
    }
  });
 } else {
+ var connection = mysql.createConnection('mysql://r73j0ltyjn09jiza:gyulu0ynbz3hy3sp@d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/h5rumeh3i389hfbj');
+ connection.connect(function(err){
+   if(err) {
+     console.log("this didnt work");
+   } else {
+     console.log("connected locally");
+   }
+ });
  console.log("NO JAWS URL");
 }
 global.connection = connection;
