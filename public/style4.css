@@ -73,12 +73,20 @@ body {
     width: 100%;
     background: #26aae1;
     margin: 0;
-    padding: 10px;
     font-size: 40px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    margin-top: 80px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: relative;
+    text-align: center;
+    position: center;
     margin-top: 40px;
+    object-fit: cover;
   }
   @media only screen and (max-width: 1000px) {
     .container {
