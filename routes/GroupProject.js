@@ -6,7 +6,7 @@ function validateForm() {
     fName = document.getElementById("fname").value,
     lName = document.getElementById("lname").value,
     nameReg =  /^[A-Z][a-zA-Z-']+[a-zA-Z]$/, 
-    emailReg = /^[a-zA-Z0-9][a-zA-Z0-9!@\$%\&-_.]+[\S+@\S]+@(yahoo|ymail|rocketmail|gmail|aol|hotmail|icloud|mailchimp|zoho|gmx|hushmail|mail|outlook|yandex|army|godaddy|aemail4u|boardermail|caramail|email|fastmail|swissmail|comcast|domain|namecheap|name|msn|theclubhou.se|simplicity|indeed|bluehost)\.(net|mil|com|in|org|co\.uk)$/i,  
+    emailReg = /^[a-zA-Z0-9][a-zA-Z0-9!@\$%\&-_.]+[\S+@\S]+@[a-zA-Z0-9!@\$%\&-_.]+$/i   //*(yahoo|ymail|rocketmail|gmail|aol|hotmail|icloud|mailchimp|zoho|gmx|hushmail|mail|outlook|yandex|army|godaddy|aemail4u|boardermail|caramail|email|fastmail|swissmail|comcast|domain|namecheap|name|msn|theclubhou.se|simplicity|indeed|bluehost)\.(net|mil|com|in|org|co\.uk)*/ 
     spcChar= /^[0-9!@#\$%\^\&*\)\(+=._-]+$/, 
     errChar= /^\S+$/,
     emailErr= /^\S+$/,
@@ -72,7 +72,8 @@ function validateForm() {
     }
   
   else if(emailRes === true && nameRes2 === true && nameRes ===true) {
-    return confirm("Thank You For Signing Into An Event @ The Clubhou.se!!!");
+    
+    return confirm("Thank You For Signing In @ The Clubhou.se!!!");
     }
 }
    
