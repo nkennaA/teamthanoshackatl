@@ -35,53 +35,51 @@ li {
   border-left: 2px solid rgb(253, 249, 249);
 }
 
-#right{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Bebas Neue", sans-serif;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #26aae1;
-  }
-  li {
-    border-left: 2px solid rgb(253, 249, 249);
-  }
+#right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+li {
+  float: right;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #26aae1;
+}
+li {
+  border-left: 2px solid rgb(253, 249, 249);
+}
 
 .container {
   border: 5px solid #333;
-  width: 60%;
-  float: left;
+  width: 100%;
   background: #26aae1;
+  text-align: center;
   /* margin: 20px; */
-  margin: 0;
+  margin: 60;
   padding: 20px;
-  font-size: 10px;
+  font-size: 40px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -89,13 +87,10 @@ li {
     margin-top: 20px !important;
     width: 80% !important;
   }
- 
 }
 
 @media only screen and (max-width: 700px) {
   .container {
     width: 100% !important;
   }
-  
 }
-
