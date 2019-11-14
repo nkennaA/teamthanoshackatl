@@ -152,6 +152,9 @@ module.exports = {
           console.log("True");
       }
         let name = req.body.fname +" "+ req.body.lname;
+        while(name.includes("'")){
+            name= name.replace("'","\'");
+        }
         let email = req.body.email;
         let eventID;
         let event = req.body.event;
