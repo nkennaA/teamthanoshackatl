@@ -13,6 +13,7 @@ module.exports = {
             for(let packet in result) {
                 event1+= (result[packet]["guest_name"]) + ", ";
             }
+            event1 = event1.replace(/&#39/g, "\'");
             console.log(event1);
             connection.query(event2Query, (err, result)=>{
                 if (err) {
@@ -21,6 +22,7 @@ module.exports = {
                 for(let packet in result) {
                     event2+= (result[packet]["guest_name"]) + ", ";
                 }
+                event2 = event2.replace(/&#39/g, "\'");
                 console.log(event2);
                 connection.query(event3Query, (err, result)=>{
                     if (err) {
@@ -29,6 +31,7 @@ module.exports = {
                     for(let packet in result) {
                         event3+= (result[packet]["guest_name"]) + ", ";
                     }
+                    event3 = event3.replace(/&#39/g, "'");
                     console.log(event3);
                     res.render('admin.ejs', {
                         event1,
@@ -36,7 +39,7 @@ module.exports = {
                         event3
                     });
                 }); 
-            });
+           });
         }); 
     }
 }

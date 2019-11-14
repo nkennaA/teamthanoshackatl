@@ -32,7 +32,7 @@ ul {
   }
   table {
     
-    font-family: 'Bebas Neue', sans-serif;
+    font-family:sans-serif;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -54,7 +54,7 @@ ul {
     text-transform: uppercase;
     background-color: #26aae1;
     color: white;
-    width: 100%;
+    width: 80%;
     padding: 20px;
     
   }
