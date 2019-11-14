@@ -4,8 +4,8 @@ module.exports = {
         let event2 = "";
         let event3 = "";
         let event1Query = "SELECT guest_name FROM guests WHERE event_ID = 1";
-        let event2Query = "SELECT guest_name FROM guests WHERE event_ID = 2";
-        let event3Query = "SELECT guest_name FROM guests WHERE event_ID = 3";
+        let event2Query = "SELECT guest_name FROM guests WHERE event_ID = 3";
+        let event3Query = "SELECT guest_name FROM guests WHERE event_ID = 2";
         connection.query(event1Query, (err, result)=>{
             if (err) {
                 return res.status(500).send(err);
