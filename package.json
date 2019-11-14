@@ -19,9 +19,14 @@
   },
   "homepage": "https://github.com/nkennaA/teamthanoshackatl#readme",
   "dependencies": {
+<<<<<<< HEAD
     "body": "^5.1.0",
+=======
+    "body-parser": "^1.19.0",
+>>>>>>> 77455b9df5254734c6f3146324e445894496bf81
     "ejs": "^2.7.1",
     "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6",
     "express-generator": "^4.16.1",
     "mysql": "^2.17.1",
     "nodemon": "^1.19.4"
