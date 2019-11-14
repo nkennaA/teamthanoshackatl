@@ -29,7 +29,7 @@ module.exports = {
         fName = req.body.fname,
         lName = req.body.lname,
         nameReg =  /^[A-Z][a-zA-Z-']+[a-zA-Z]$/, 
-        emailReg = /^[a-zA-Z0-9][a-zA-Z0-9!@\$%\&-_.]+[\S+@\S]+@[a-zA-Z0-9!@\$%\&-_.]+$/i,   //*(yahoo|ymail|rocketmail|gmail|aol|hotmail|icloud|mailchimp|zoho|gmx|hushmail|mail|outlook|yandex|army|godaddy|aemail4u|boardermail|caramail|email|fastmail|swissmail|comcast|domain|namecheap|name|msn|theclubhou.se|simplicity|indeed|bluehost)\.(net|mil|com|in|org|co\.uk)*/ 
+        emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,   //*(yahoo|ymail|rocketmail|gmail|aol|hotmail|icloud|mailchimp|zoho|gmx|hushmail|mail|outlook|yandex|army|godaddy|aemail4u|boardermail|caramail|email|fastmail|swissmail|comcast|domain|namecheap|name|msn|theclubhou.se|simplicity|indeed|bluehost)\.(net|mil|com|in|org|co\.uk)*/ 
         spcChar= /^[0-9!@#\$%\^\&*\)\(+=._-]+$/, 
         errChar= /^\S+$/,
         emailErr= /^\S+$/
