@@ -21,7 +21,7 @@
   "dependencies": {
     "body": "^5.1.0",
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.6-alpha.6",
     "express-generator": "^4.16.1",
     "mysql": "^2.17.1",
